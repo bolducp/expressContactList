@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div
+    table
+      thead
+        tr: th Contacts
+      tbody
+        each contact in contactArr
+          tr
+            td #{contact.name} 
+            td 
+              a(href='/contacts/details/' +  '#{contact.name}') Get details
+              | : Click for more contact details

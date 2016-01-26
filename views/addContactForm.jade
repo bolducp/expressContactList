@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div
+  #contactInput.row
+   form#newContact
+     label New contact name:  
+     input#name(type='text', size='55', required)
+     label Email address: 
+     input#email(type='text', size='55', required)
+     input#submit(type='submit', value='Submit')
+     br
+    
+    
+
+block scripts
+  script(src="/javascripts/addContact.js")
