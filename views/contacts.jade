@@ -4,11 +4,16 @@ block content
   div
     table.table.table-hover
       thead
-        tr: th Contacts
+        tr: th Contacts 
+        
       tbody
         each contact in contactArr
           tr
             td #{contact.name} 
             td 
               a(href='/contacts/details/' +  '#{contact.email}') Get details
-              | : Click for more contact details
+              | : Click for more contact details for #{contact.name} 
+  div
+    br
+    h3
+      a#addContact(href="/contacts/addContactForm") Add a new contact  

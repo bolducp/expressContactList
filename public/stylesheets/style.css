@@ -24,6 +24,12 @@ table {
   padding-right: 15%;
 }
 
+#addContact {
+  color: Thistle;
+  font-family: 'Volkhov', serif;
+  font-size: 26px;
+}
+
 .row {
   padding-bottom: 10px;
 }
