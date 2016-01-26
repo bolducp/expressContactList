@@ -2,7 +2,7 @@ extends layout
 
 block content
   div
-    table
+    table.table.table-hover
       thead
         tr: th Contacts
       tbody
@@ -10,5 +10,5 @@ block content
           tr
             td #{contact.name} 
             td 
-              a(href='/contacts/details/' +  '#{contact.name}') Get details
+              a(href='/contacts/details/' +  '#{contact.email}') Get details
               | : Click for more contact details

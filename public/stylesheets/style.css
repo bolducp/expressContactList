@@ -14,6 +14,16 @@ a {
   color: #00B7FF;
 }
 
+th {
+  font-size: 32px;
+}
+
+table {
+  font-size: 22px;
+  margin-left: 10%;
+  padding-right: 15%;
+}
+
 .row {
   padding-bottom: 10px;
 }
