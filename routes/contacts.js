@@ -24,16 +24,14 @@ router.post('/add', function(req, res, next){
 
       var contactArr = JSON.parse(data);
       var newContact = req.body;
-      console.log("req.body", req.body);
       contactArr.push(newContact);
 
       fs.writeFile('./contacts.json', JSON.stringify(contactArr), function(err){
         if (err) return res.status(400).send(err);
-        res.send({redirect: '/contacts'});
+        res.send();
       });
     });
 });
-
 
 
 module.exports = router;

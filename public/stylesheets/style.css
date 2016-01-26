@@ -1,8 +1,19 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Cardo', serif;
+  background-color: snow;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Volkhov', serif;
+  font-size: 50px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.row {
+  padding-bottom: 10px;
 }

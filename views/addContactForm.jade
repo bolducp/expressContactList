@@ -1,14 +1,27 @@
 extends layout
 
 block content
+  div.row
+    h1 Add a new contact:
   div
   #contactInput.row
-   form#newContact
-     label New contact name:  
-     input#name(type='text', size='55', required)
-     label Email address: 
-     input#email(type='text', size='55', required)
-     input#submit(type='submit', value='Submit')
+   form#newContact.form-group
+     div.row
+       div.col-xs-6
+         label New contact name:  
+         input.form-control#name(type='text', size='55', required)
+        div.col-xs-6
+         label Email address: 
+         input.form-control#email(type='text', size='55', required)
+     div.row
+       div.col-xs-6
+         label Phone number: 
+         input.form-control#phone(type='text', size='55', required)
+        div.col-xs-6
+         label Additional notes: 
+         input.form-control#notes(type='textarea', rows='10')
+     br
+     input#submit.btn.btn-info(type='submit', value='Submit')
      br
     
     
